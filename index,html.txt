@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chinnareddy Venkata Sudhakar Reddy — Portfolio</title>
+  <meta name="description" content="AI/ML student & web developer portfolio" />
+  <style>
+    /* Simple, modern responsive CSS for a single-file static portfolio */
+    :root{--accent:#2563eb;--bg:#0f172a;--card:#0b1220;--muted:#9aa4bf;color-scheme:dark}
+    *{box-sizing:border-box}body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;background:linear-gradient(180deg,#071029 0%, #071834 100%);color:#e6eef8;line-height:1.5}
+    .wrap{max-width:1000px;margin:36px auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:110px;height:110px;border-radius:14px;flex:0 0 110px;background:linear-gradient(135deg,var(--accent),#7c3aed);display:grid;place-items:center;font-weight:700;font-size:20px}
+    h1{margin:0;font-size:22px}
+    .role{color:var(--muted);margin-top:6px}
+    .card{background:rgba(255,255,255,0.03);padding:18px;border-radius:12px;margin-top:18px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr}.avatar{width:86px;height:86px;flex:0 0 86px}}
+    .section{margin-bottom:14px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:rgba(255,255,255,0.04);padding:8px 10px;border-radius:999px;font-size:13px}
+    .projects{display:flex;flex-direction:column;gap:12px}
+    .proj{padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border:1px solid rgba(255,255,255,0.03)}
+    .proj h4{margin:0 0 6px 0}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+    footer{margin-top:20px;color:var(--muted);font-size:14px}
+    .meta{color:var(--muted);font-size:14px}
+    .contact a{color:inherit;text-decoration:none;border-bottom:1px dashed rgba(255,255,255,0.06)}
+    /* Small helpers */
+    .muted{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar" id="avatar">CV
+      </div>
+      <div>
+        <h1>Chinnareddy Venkata Sudhakar Reddy</h1>
+        <div class="role">AI/ML Student & Web Developer</div>
+        <div class="meta">KS Ram College of Engineering · Interested in machine learning, web apps, and full‑stack development</div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main>
+        <section class="card section" id="about">
+          <h3>About</h3>
+          <p>I’m a CSE student with a strong interest in AI, Machine Learning, and Software Development. I work on small but impactful projects that help me understand real-world problem solving.</p>
+          <p>I enjoy learning new technologies, contributing to coding projects, and improving my development skills in Python, Java, and Web Development. I aim to become a Software Engineer who builds world-class applications.</p>
+        </section>
+
+        <section class="card section" id="projects">
+          <h3>Projects</h3>
+          <div class="projects">
+            <article class="proj">
+              <h4>1. Handwritten Digit Classifier (Demo)</h4>
+              <p class="muted">A CNN trained on MNIST using TensorFlow — web demo with a canvas to draw digits and predict in real time.</p>
+              <a class="btn" href="#">View code</a>
+            </article>
+
+            <article class="proj">
+              <h4>2. Portfolio Website</h4>
+              <p class="muted">This static portfolio (HTML + CSS) you can host on GitHub Pages. Responsive layout and easy to customize.</p>
+              <a class="btn" href="#">View code</a>
+            </article>
+
+            <article class="proj">
+              <h4>3. Web-based Chatbot</h4>
+              <p class="muted">A simple chatbot UI connected to a backend that serves ML-based intents and replies. Built with Node.js and Express.</p>
+              <a class="btn" href="#">View code</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="card section" id="contact">
+          <h3>Contact</h3>
+          <p class="contact">Mobile: <a href="tel:9390804350">9390804350</a></p>
+          <p class="contact">Email: <a href="mailto:thulassamasudha@gmail.com">thulassamasudha@gmail.com</a></p>
+        </section>
+      </main>
+
+      <aside>
+        <div class="card section">
+          <h3>Skills</h3>
+          <div class="skills">
+            <span class="chip">HTML</span>
+            <span class="chip">CSS</span>
+            <span class="chip">Python</span>
+            <span class="chip">Java</span>
+            <span class="chip">Web Developing</span>
+            <span class="chip">MS‑Office</span>
+          </div>
+        </div>
+
+        <div class="card section">
+          <h3>Quick links</h3>
+          <p class="muted">Add your GitHub and LinkedIn links below by editing the HTML.</p>
+          <p><a class="btn" href="#">GitHub</a> <a class="btn" href="https://github.com/thulassama">GitHub/a> <a class="btn" href="#" style="margin-left:8px;background:#111827">LinkedIn</a></p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      Built with ❤️ · Static site ready for GitHub Pages
+    </footer>
+  </div>
+
+  <!--
+    HOW TO USE THIS FILE
+    1) Open this file in a text editor. Replace the name/title, about text, skills, projects and email.
+    2) To change the avatar image: replace the <div id="avatar"> with an <img> tag and point to your image file.
+    3) Save as index.html and upload to a GitHub repo named: yourgithubusername.github.io
+    4) Commit to the main branch; enable GitHub Pages to serve from main / (root).
+
+    If you'd like separate CSS and JS files instead of a single HTML file, tell me and I'll split them.
+  -->
+</body>
+</html>
